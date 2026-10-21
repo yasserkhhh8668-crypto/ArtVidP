@@ -91,7 +91,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
   }catch(e){}
   if(navigator.webdriver||/bot|crawl|spider|preview|facebookexternalhit/i.test(navigator.userAgent))return;
   function send(msg){
-    try{fetch('https://ntfy.sh/'+TOPIC+'?priority=2',{method:'POST',body:msg,mode:'no-cors',keepalive:true});}catch(e){}
+    try{fetch('https://ntfy.sh/'+TOPIC,{method:'POST',body:msg,mode:'no-cors',keepalive:true});}catch(e){}
   }
   function info(){
     var ua=navigator.userAgent;
